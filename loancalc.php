@@ -8,7 +8,7 @@ padding:10px;
 background:#2C3E50;
 outline:none;
 border:none;
-width:210px;
+width:209px;
 margin:4px;
 border-bottom: 3px solid #00FFFF
 }
