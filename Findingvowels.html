@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>	
+	</head>
+	<body>
+    <script>
+	var txt=prompt("Enter the String to Continue");
+    vowels(txt);
+	function vowels(txt)
+	{
+		for(var i = 0; i<txt.length; i++)
+    	{
+        	var ch=txt.charAt(i);
+			if (ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'||ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U')
+        	{
+            	document.write("The Text is:" +txt+ "<br/>");
+		    	document.write("The leftmost vowel is :"+ch+"<br/>");
+            	var pos = i+1;
+		    	document.write("The position of the left most vowel " +ch+ " is:" +pos+"\n");			
+            	exit;
+        	}
+    	}
+    	document.write("The Text is:" +txt+ "<br/>");
+    	document.write("The Text has no vowels");
+	}	
+	</script>
+	
+	</body>
+</html>

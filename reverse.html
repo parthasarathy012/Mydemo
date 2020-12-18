@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>	
+<style type="text/css">
+
+div{
+width:250;
+height:auto;
+text-align:center;
+background:#2C3E50 ;
+overflow:auto;
+position:fixed;
+left:600px;
+top:250px;
+padding-top:40px
+}
+
+div input[type=text],h2{
+padding:10px;
+border:none;
+outline:none;
+margin-bottom:5px;
+}
+
+div input[type=button]{
+padding:10px;
+border:none;
+border:1px solid white;
+color:white;
+background:grey;
+margin-bottom:5px;
+}
+</style>
+</head>
+    <body style="background:red; color:white;">
+    <br><br><br><br><br>
+  <p style="text-align:center; background-color:red; font-family:Impact; font-size:40px; color:white;" >REVERSE_NUMBER</p>
+    <div>
+    <input type="text" id="num" placeholder="ENTER NUMBER ONLY"><br>
+    <input type="button" value="REVERSE" id="clik" onclick="reverse();">
+     <input type="button" value="RESET" id="kk" onclick="location.reload();">
+     <input type="button" onclick="location.href='Findingvowels.html'" value="FINDING VOWELS">
+    <h2 id="print"></h2>
+	<script>
+	
+	function reverse()
+	{    
+		var number= document.getElementById("num");
+		var rev=0,re;
+		var num = parseInt(number.value);
+		if(isNaN(num)==true)
+			{
+			alert("Enter only Number");
+			location.reload();
+			}
+		else{
+		while(num!=0)
+		{
+			re = num%10;
+			num = parseInt(num/10);
+			rev = rev * 10 + re;
+		}
+		}
+		 document.getElementById("print").innerHTML= "Reverse : " +rev;
+	}
+	</script>
+	</div>
+	
+	</body>
+</html>
